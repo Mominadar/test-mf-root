@@ -24,6 +24,7 @@ export default defineConfig({
     react(),
     federation({
       name: "app",
+      //@ts-ignore
       remotes: {
         ...remotesApp,
         from: "webpack",
@@ -63,6 +64,7 @@ export default defineConfig({
       ],
     },
   },
+  //@ts-ignore
   output: {
     libraryTarget: "system",
   },

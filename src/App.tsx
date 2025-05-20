@@ -3,6 +3,7 @@ import { useReactToPrint } from 'react-to-print';
 import './App.css'
 import React, { useCallback, useRef, useState } from 'react';
 
+//@ts-ignore
 const RemoteComponent = React.lazy(() => import('remoteComponent/RemoteComponent'));
 
 function App() {
